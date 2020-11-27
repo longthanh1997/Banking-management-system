@@ -1,0 +1,40 @@
+package Banking;
+
+
+import java.util.Date;
+
+public class UserInformation
+{
+	String userName;
+	String email;
+	String phoneNo;
+	String NID;
+	String address;
+	String occupation;
+	String sex;
+	
+	Date birthdate;
+
+	public UserInformation(String username, String email, String phoneNo, String address,
+			String occupation, String sex, Date birthdate)
+	{
+		this.userName=username;
+		this.email = email;
+		this.phoneNo = phoneNo;
+		this.NID = NID;
+		this.address = address;
+		this.occupation = occupation;
+		this.sex = sex;
+		this.birthdate = birthdate;
+	}
+
+	public String toString()
+	{
+		return  userName + "\n" + email + "\n"
+				+ phoneNo + "\n" + NID + "\n" + address + "\n" + occupation + "\n" + sex
+				+ "\n" + birthdate;
+	}
+	
+	
+	
+}
